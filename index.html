@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shankharaj Datta - C++ & Unreal Engine Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(to bottom right, #0f172a, #1e293b); /* A cool dark blue gradient */
+        }
+        .text-custom-blue { color: #5fa8d3; } /* A brighter blue for dark mode */
+        .bg-custom-blue { background-color: #5fa8d3; }
+        .border-custom-blue { border-color: #5fa8d3; }
+
+        /* Custom underline for section titles */
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 3px;
+            background-color: #5fa8d3;
+            margin-top: 0.75rem;
+        }
+        
+        /* Project card hover effect */
+        .project-card {
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+        .project-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+        }
+        
+        /* Smooth transition for links */
+        a, button {
+            transition: all 0.2s ease-in-out;
+        }
+        nav a:hover {
+            color: #5fa8d3;
+            transform: scale(1.05);
+        }
+        .social-icon:hover {
+            color: #5fa8d3;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body class="text-slate-300 antialiased">
+
+    <!-- Navigation Bar -->
+    <nav class="bg-slate-900/80 backdrop-blur-md sticky top-0 z-50 shadow-sm">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex-shrink-0">
+                    <a href="#home" class="text-xl font-bold text-custom-blue tracking-wider">SHANKHARAJ DATTA</a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="#about" class="text-slate-300 font-medium px-3 py-2 rounded-md text-sm">About</a>
+                        <a href="#projects" class="text-slate-300 font-medium px-3 py-2 rounded-md text-sm">Projects</a>
+                        <a href="#skills" class="text-slate-300 font-medium px-3 py-2 rounded-md text-sm">Skills</a>
+                        <a href="#contact" class="bg-custom-blue text-slate-900 font-medium px-4 py-2 rounded-full text-sm hover:opacity-90">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <!-- Hero Section -->
+        <section id="home" class="text-center py-20 md:py-32">
+            <h1 class="text-5xl md:text-7xl font-extrabold text-white tracking-tight">SHANKHARAJ DATTA</h1>
+            <p class="mt-4 text-lg md:text-xl text-slate-400 max-w-2xl mx-auto">Software developer specializing in C++ and Unreal Engine. Seeking full-time roles, including visa opportunities, to build efficient game systems and tools.</p>
+            <div class="mt-8 flex justify-center items-center gap-x-6 text-slate-400">
+                <a href="https://github.com/1SHAMAY1" target="_blank" class="social-icon">
+                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+                </a>
+                <a href="https://www.linkedin.com/in/shankharaj-datta-45921a28a/" target="_blank" class="social-icon">
+                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/></svg>
+                </a>
+            </div>
+        </section>
+
+        <!-- About & Education Section -->
+        <section id="about" class="py-16 md:py-24 bg-slate-800 rounded-xl shadow-lg my-16">
+             <div class="max-w-4xl mx-auto px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-custom-blue uppercase section-title">About Me</h2>
+                <div class="mt-8 grid grid-cols-1 md:grid-cols-5 gap-12">
+                    <div class="md:col-span-3">
+                        <h3 class="text-xl font-semibold text-slate-100 mb-4">Profile</h3>
+                        <p class="text-base leading-relaxed text-slate-400">
+                           As a software developer with a deep interest in C++ and Unreal Engine 5, I focus on game engine design, networking, and creating custom development tools. I enjoy tackling complex problems and am currently seeking full-time software development roles, including opportunities requiring a visa, where I can contribute to creating immersive and technically excellent interactive experiences.
+                        </p>
+                    </div>
+                    <div class="md:col-span-2">
+                        <h3 class="text-xl font-semibold text-slate-100 mb-4">Education</h3>
+                        <div class="space-y-4">
+                            <div>
+                                <h4 class="font-bold text-slate-200">B.Tech, Computer Science</h4>
+                                <p class="text-sm text-slate-400">National Institute Of Technology Agartala</p>
+                                <p class="text-xs text-slate-500 italic">Expected: 2027</p>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-200">12th & 10th Grade</h4>
+                                <p class="text-sm text-slate-400">Belonia Govt. English Medium H.S. School</p>
+                                <p class="text-xs text-slate-500 italic">2022 & 2020</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+             </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-16 md:py-24">
+            <h2 class="text-3xl text-center font-bold text-custom-blue uppercase section-title mx-auto">Projects</h2>
+            <div class="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Project Card 1 -->
+                <div class="project-card bg-slate-800 rounded-lg shadow-md overflow-hidden flex flex-col">
+                    <div class="p-6 flex-grow">
+                        <h3 class="text-lg font-bold text-custom-blue">DSA Utility Library</h3>
+                        <p class="text-sm mt-1 mb-3 text-slate-400">C++ library with templates for common data structures and algorithms.</p>
+                        <ul class="list-disc list-inside text-sm space-y-1 text-slate-500">
+                            <li>Wrote 20+ generic templates with no dynamic memory usage.</li>
+                            <li>Shared as header-only utility in multiple academic projects.</li>
+                            <li>Provides static and dynamic versions with example usage.</li>
+                        </ul>
+                    </div>
+                    <div class="p-6 bg-slate-700/50 border-t border-slate-600">
+                        <a href="https://github.com/1SHAMAY1/DSAUtility" target="_blank" class="text-sm text-custom-blue hover:underline font-semibold">View on GitHub &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Project Card 2 -->
+                <div class="project-card bg-slate-800 rounded-lg shadow-md overflow-hidden flex flex-col">
+                    <div class="p-6 flex-grow">
+                        <h3 class="text-lg font-bold text-custom-blue">Custom Logger (C++)</h3>
+                        <p class="text-sm mt-1 mb-3 text-slate-400">Standalone C++ logger with ANSI color support and JSON output.</p>
+                        <ul class="list-disc list-inside text-sm space-y-1 text-slate-500">
+                            <li>Supports log levels, categories, timestamps, and macros.</li>
+                            <li>Outputs logs to console and structured JSON files.</li>
+                            <li>Used for real-time debugging in various projects.</li>
+                        </ul>
+                    </div>
+                     <div class="p-6 bg-slate-700/50 border-t border-slate-600">
+                        <a href="https://github.com/1SHAMAY1/Customizable_Logger" target="_blank" class="text-sm text-custom-blue hover:underline font-semibold">View on GitHub &rarr;</a>
+                    </div>
+                </div>
+                
+                <!-- Project Card 3 -->
+                <div class="project-card bg-slate-800 rounded-lg shadow-md overflow-hidden flex flex-col">
+                    <div class="p-6 flex-grow">
+                        <h3 class="text-lg font-bold text-custom-blue">Multiplayer Movement Plugin (UE5)</h3>
+                        <p class="text-sm mt-1 mb-3 text-slate-400">Unreal plugin for climbing, gliding, crouching with network support.</p>
+                        <ul class="list-disc list-inside text-sm space-y-1 text-slate-500">
+                            <li>Implemented 8+ movement types with character components.</li>
+                            <li>Handles client prediction and rollback logic.</li>
+                            <li>Used in test projects with multiplayer sessions.</li>
+                        </ul>
+                    </div>
+                    <div class="p-6 bg-slate-700/50 border-t border-slate-600">
+                        <a href="https://github.com/1SHAMAY1/Plugin-CharacterLocomotionSystem" target="_blank" class="text-sm text-custom-blue hover:underline font-semibold">View on GitHub &rarr;</a>
+                    </div>
+                </div>
+
+                 <!-- Project Card 4 -->
+                <div class="project-card bg-slate-800 rounded-lg shadow-md overflow-hidden flex flex-col">
+                    <div class="p-6 flex-grow">
+                        <h3 class="text-lg font-bold text-custom-blue">Time Engine (WIP)</h3>
+                        <p class="text-sm mt-1 mb-3 text-slate-400">Game engine in C++ with entity system, logging, and input handling.</p>
+                        <ul class="list-disc list-inside text-sm space-y-1 text-slate-500">
+                            <li>Built ECS with support for 10k+ entities.</li>
+                            <li>Integrated ImGui for in-editor UI.</li>
+                            <li>Used Premake to manage build configurations.</li>
+                        </ul>
+                    </div>
+                    <div class="p-6 bg-slate-700/50 border-t border-slate-600">
+                        <a href="https://github.com/1SHAMAY1/TimeEngine" target="_blank" class="text-sm text-custom-blue hover:underline font-semibold">View on GitHub &rarr;</a>
+                    </div>
+                </div>
+                
+                <!-- Project Card 5 -->
+                <div class="project-card bg-slate-800 rounded-lg shadow-md overflow-hidden flex flex-col">
+                    <div class="p-6 flex-grow">
+                        <h3 class="text-lg font-bold text-custom-blue">Transport Simulation (WIP)</h3>
+                        <p class="text-sm mt-1 mb-3 text-slate-400">C++ application simulating vehicles with routing logic.</p>
+                        <ul class="list-disc list-inside text-sm space-y-1 text-slate-500">
+                            <li>Implements pathfinding with terrain/time cost modifiers.</li>
+                            <li>Simulates rerouting, delays, and vehicle behavior.</li>
+                            <li>Includes simple UI with zoom, pan, and follow-cam.</li>
+                        </ul>
+                    </div>
+                    <div class="p-6 bg-slate-700/50 border-t border-slate-600">
+                        <a href="https://github.com/1SHAMAY1/Transport-Sim" target="_blank" class="text-sm text-custom-blue hover:underline font-semibold">View on GitHub &rarr;</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="py-16 md:py-24 bg-slate-800 rounded-xl shadow-lg my-16">
+             <div class="max-w-4xl mx-auto px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-custom-blue uppercase section-title">Technical Skills</h2>
+                <div class="mt-8 grid grid-cols-2 md:grid-cols-4 gap-8 text-sm">
+                    <div>
+                        <h3 class="font-bold text-slate-100 mb-2 border-b-2 border-slate-700 pb-2">Languages</h3>
+                        <ul class="space-y-1 mt-2 text-slate-400">
+                            <li>C++</li><li>C</li><li>CMake</li><li>LaTeX</li><li>Lua</li>
+                        </ul>
+                    </div>
+                     <div>
+                        <h3 class="font-bold text-slate-100 mb-2 border-b-2 border-slate-700 pb-2">Tools</h3>
+                        <ul class="space-y-1 mt-2 text-slate-400">
+                            <li>Unreal Engine 5</li><li>Visual Studio</li><li>Git</li><li>Premake</li><li>Jet Brains Rider</li>
+                        </ul>
+                    </div>
+                     <div>
+                        <h3 class="font-bold text-slate-100 mb-2 border-b-2 border-slate-700 pb-2">Libraries</h3>
+                        <ul class="space-y-1 mt-2 text-slate-400">
+                           <li>ImGui</li><li>OpenGL</li><li>JSON</li><li>GLFW</li><li>GLAD</li>
+                        </ul>
+                    </div>
+                     <div>
+                        <h3 class="font-bold text-slate-100 mb-2 border-b-2 border-slate-700 pb-2">Topics</h3>
+                        <ul class="space-y-1 mt-2 text-slate-400">
+                            <li>Game Systems</li><li>Multiplayer Code</li><li>Debugging</li><li>Logging</li><li>Performance Tools</li>
+                        </ul>
+                    </div>
+                </div>
+             </div>
+        </section>
+        
+        <!-- Contact Section -->
+        <section id="contact" class="py-16 md:py-24 text-center">
+             <h2 class="text-3xl font-bold text-custom-blue uppercase section-title mx-auto">Get In Touch</h2>
+             <p class="mt-8 max-w-xl mx-auto text-slate-400">I'm currently seeking new opportunities and am open to collaborations. Feel free to reach out via email or connect with me on LinkedIn.</p>
+             <div class="mt-8">
+                <a href="mailto:shankharajdatta2004@gmail.com" class="inline-block bg-custom-blue text-slate-900 font-bold px-8 py-3 rounded-full text-base hover:opacity-90 shadow-lg">
+                    Say Hello
+                </a>
+             </div>
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 text-center py-6">
+        <p class="text-sm">&copy; 2024 Shankharaj Datta. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
+
+
